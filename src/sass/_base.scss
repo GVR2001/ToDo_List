@@ -9,7 +9,7 @@ $add-button-color: #4caf50;
 $clear-button-color: #9f6060;
 
 
-@mixin mq($size) {
+@mixin mq($size) { //media query
   @media only screen and (min-width: $size) {
     @content;
   }

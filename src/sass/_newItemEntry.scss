@@ -1,3 +1,5 @@
+@use 'base';
+
 .newItemEntry {
   position: sticky; 
   top: 0;
@@ -16,7 +18,7 @@
     input[type="text"] {
       width: 80%;
       font-size: 1.25rem;
-      border: 2px solid $textbox-bordercolor;
+      border: 2px solid base.$textbox-bordercolor;
       border-radius: 10px;
       padding: 0.75rem;
       outline: none;
@@ -29,9 +31,9 @@
 
     button {
       font-size: 1.25rem;
-      background-color: $add-button-color;
+      background-color: base.$add-button-color;
       padding: 0.75rem;
-      @include mq(768px) {
+      @include base.mq(768px) {
         font-size: 1.5rem;
       }
     }
